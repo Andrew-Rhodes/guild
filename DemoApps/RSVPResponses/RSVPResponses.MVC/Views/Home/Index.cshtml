@@ -1,0 +1,30 @@
+﻿@model List<RSVPResponses.Models.Attendee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Add Attendee", "AddRSVP", "Home", new {@class = "btn btn-primary"})
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Favorite Game</th>
+        <th>Days</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var attendee in Model)
+    {
+        <tr>
+            <td>@attendee.Name</td>
+            <td>@attendee.Email</td>
+            <td>@attendee.FavoriteGame</td>
+            <td>@attendee.Days</td>
+        </tr>
+    }
+    </tbody>
+</table>

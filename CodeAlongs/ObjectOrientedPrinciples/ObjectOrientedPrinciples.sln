@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{D38DD601-07F7-4D5E-B208-CFE7C48EA825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInheritance", "BasicInheritance\BasicInheritance.csproj", "{6F8161BA-9059-4ACE-A783-F351809F7997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemDotObject", "SystemDotObject\SystemDotObject.csproj", "{45640F42-E673-4558-9995-61822CE481C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskingAndBase", "MaskingAndBase\MaskingAndBase.csproj", "{13A2B58D-F2C6-400D-830C-6FF73755E88F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D38DD601-07F7-4D5E-B208-CFE7C48EA825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38DD601-07F7-4D5E-B208-CFE7C48EA825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38DD601-07F7-4D5E-B208-CFE7C48EA825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38DD601-07F7-4D5E-B208-CFE7C48EA825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8161BA-9059-4ACE-A783-F351809F7997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8161BA-9059-4ACE-A783-F351809F7997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8161BA-9059-4ACE-A783-F351809F7997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8161BA-9059-4ACE-A783-F351809F7997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45640F42-E673-4558-9995-61822CE481C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45640F42-E673-4558-9995-61822CE481C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45640F42-E673-4558-9995-61822CE481C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45640F42-E673-4558-9995-61822CE481C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A2B58D-F2C6-400D-830C-6FF73755E88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A2B58D-F2C6-400D-830C-6FF73755E88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A2B58D-F2C6-400D-830C-6FF73755E88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A2B58D-F2C6-400D-830C-6FF73755E88F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors Part 2</title>
+        <link rel="stylesheet" type="text/css" href="../common.css"/>
+		<link rel="stylesheet" type="text/css" href="part2.css"/>
+		<script type="text/javascript" src="../jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="part2.js"></script>
+    </head>
+    <body>
+		<h1>Lesson 02 - Selectors Part 2</h1>
+		<p>Let's do something fun!  Here I've created a text input that has some html in it that is 
+		rendered on the other side of the screen.  You can type any selector into the input below, click 
+		the button, and it will highlight the elements selected.</p>
+		<ol>
+			<li>Give a tag name like 'p' to select all elements of a tag</li>
+			<li>Use a hash # to select an element with a specific id</li>
+			<li>Use a period . to select elements with a certain css class</li>
+			<li>Colons : are special selectors, try li:last-child for example</li>
+			<li>You can combine selectors like div.rectangle to only select divs with the class rectangle</li>
+			<li>Use a comma to combine selectors, for example p.intro,li would select all the li tags and the paragraph element with the intro class</li>
+		</ol>
+		<p>Here is a list of <a href="http://api.jquery.com/category/selectors/" target="_blank">jQuery selectors</a>, you can change the text input and play around!</p>
+		<div>jQuery selectors: &nbsp;<input id="userinput" name="userinput" value="p.intro,li"><input type="button" value="output" id="btnoutput">
+		</div>
+		<div>
+			<textarea style="width: 100%; height: 250px;" id="code" name="code" wrap="logical">
+<h1>This is our swanky HTML page</h1>
+<p class="intro">We are the Software Craftsmanship Guild</p>
+<p>We use a variety of technologies for learning that include the following:</p>
+<ul id="techlist">
+	<li>ASP.NET MVC</li>
+	<li>SQL Server</li>
+	<li>C# .NET</li>
+	<li>jQuery</li>
+</ul>
+<div class="rectangle">1</div>
+<div class="rectangle">2</div>
+<div class="rectangle">3</div>
+<div class="rectangle">4</div>
+			</textarea>			
+		</div>
+		<div id="results">
+		
+		</div>
+    </body>
+</html>

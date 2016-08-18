@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lesson 05</title>
+	<link rel="stylesheet" type="text/css" href="../common.css"/>
+    <script src="Arrays.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Lesson 05 - Arrays</h1>
+	<p>Arrays are declared like other variables, but they contain their data in square braces []</p>
+	<p>Arrays are useful for storing lists of data.  They maintain their order and the data within
+	   them can be accessed via index which starts at zero.  Because JavaScript is a dynamically typed 
+	   language arrays can contain mixed types.</p>
+	<p>Here are some examples of declaring arrays</p>
+	<p>Strings</p>
+	<ol class="code">
+		<li><code>var myColors= ["blue", "red", "green", "brown"];</code></li>
+	</ol>
+	<p>Numbers</p>
+	<ol class="code">
+		<li><code>var myNumbers = [5, 10, 15, 20];</code></li>
+	</ol>
+	<p>As mentioned earlier we can mix types</p>
+	<ol class="code">
+		<li><code>var myMixedArray = [5, "something", true, "orange"];</code></li>
+	</ol>
+	<h3>Arrays in For Loops</h3>
+	<p>Using our old friend length, we can also loop through an array with a for loop</p>
+	<ol class="code">
+		<li><code>for (var i = 0; i < myColors.length; i++) {</code></li>
+		<li class="indent1"><code>console.log("The color " + myColors[i] + " is at position " + i);</code></li>
+		<li><code>}</code></li>
+	</ol>
+	<h3>push/pop</h3>
+	<p>The push command pushes a new item to the end of an array.  The pop method removes an item from the end of an array</p>
+	<ol class="code">
+		<li><code>var letters = [];</code></li>
+		<li><code>letters.push("A");</code></li>
+		<li><code>letters.push("B", "C");</code></li>
+		<li><code>console.log(letters);</code></li>
+		<li><code>console.log(letters.pop());</code></li>
+		<li><code>console.log(letters);</code></li>
+	</ol>
+	<h3>shift/unshift</h3>
+	<p>shift and unshift are a similar concept to push and pop, but they work with the beginning of the array rather than the end</p>
+	<ol class="code">
+		<li><code>var letters2 = [];</code></li>
+		<li><code>letters2.shift("A");</code></li>
+		<li><code>letters2.shift("B", "C");</code></li>
+		<li><code>console.log(letters2);</code></li>
+		<li><code>console.log(letters2.unshift());</code></li>
+		<li><code>console.log(letters2);</code></li>
+	</ol>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿@model List<HRPortal.Models.Data.Company>
+@{
+    ViewBag.Title = "ListOfCompanies";
+}
+
+<h2>List of companies currently hiring</h2>
+
+@foreach (var c in Model)
+{
+    <h4>@Html.ActionLink(c.CompanyName, "Applicants", "Applicants", new { companyId = c.CompanyId }, null)</h4>
+    
+}
+
+@section scripts
+{
+    <script src="~/scripts/app/FunWithJQuery.js"></script>
+}

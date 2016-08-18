@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document.Ready()</title>
+        <link rel="stylesheet" type="text/css" href="../common.css"/>
+		<script type="text/javascript" src="../jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+		<h1>Lesson 01 - Document.Ready()</h1>
+		<p>There are several ways to include jQuery into your project.  The most common are 
+		   to either download the latest script file from the jQuery site or use a Content-Delivery-Network (CDN) and let someone else host it for you.</p>
+		<h2>Reference Downloaded Script</h2>
+		<ol class="code">
+			<li><code>&lt;head&gt;</code></li>
+			<li class="indent1"><code>&lt;script src="jquery-1.9.1.min.js"&gt;</script></code></li>
+			<li><code>&lt;/head&gt;</code></li>
+		</ol>
+		<h2>Reference CDN</h2>
+		<ol class="code">
+			<li><code>&lt;head&gt;</code></li>
+			<li class="indent1"><code>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;</script></code></li>
+			<li><code>&lt;/head&gt;</code></li>
+		</ol>
+		<div class="spacer"></div>		
+		<p>The (document).ready() event can be registered with a function to execute when the page is finished loading.  It is a common entry point for setting up your jQuery events.</p>
+		
+		<ol class="code">
+			<li><code>$(document).ready(function() {</code></li>
+			<li class="indent1"><code>alert('The document is ready!');<code></li>
+			<li><code>});</code></li>
+		</ol>
+
+    </body>
+</html>

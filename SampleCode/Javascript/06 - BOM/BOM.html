@@ -1,0 +1,24 @@
+<html>
+<body>
+	<p>Hello</p>
+	
+	<script type="text/javascript">
+		//var myWindow = window.open("http://www.google.com", "", "width=200, height=100");
+	
+		var num = 0;
+		var max = 10;
+		var intervalId = null;
+		
+		function incrementNumber() {
+			num++;
+			if (num == max){
+				clearInterval(intervalId);
+				alert("Done");
+				window.open("http://www.google.com", "", "width=200, height=100");
+			}
+		}
+		
+		intervalId = setInterval(incrementNumber, 500);
+	</script>
+</body>
+</html>

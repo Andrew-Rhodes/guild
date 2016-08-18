@@ -1,0 +1,23 @@
+﻿@model JQueryValidation.Models.RsvpResponse
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<h2>Thanks</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Thank you, @Model.Name</h1>
+        @if (Model.WillAttend.Value)
+        {
+            <p>
+                It's great that you're coming, we will see if other
+                like @Model.FavoriteGame and play it if so!
+            </p>
+        }
+        else
+        {
+            <p>Sorry you couldn't make it this time</p>
+        }
+    </div>
+</div>

@@ -1,0 +1,7 @@
+Write a function called creditCheck that takes the parameter income.
+
+Inside the function, if the income is greater than or equal to 10000, the computer will return "You qualify for a credit card."
+
+If the income is less than 10000, have the method return "You do not qualify for a credit card."
+
+Write code to test all the conditions.

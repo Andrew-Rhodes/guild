@@ -1,0 +1,40 @@
+html {
+	width: 960px;
+}
+
+div.spacer {
+	height: 10px;
+}
+
+ol.code {
+	background: #e7e7f5;
+	color: #333;
+	margin: 0;
+	padding: 0.5em;
+	width: 90%;
+	list-style: none;
+}
+
+ol.code li {
+	border-bottom: 1px solid #666;
+}
+
+ol.code li#last {
+	border-bottom: none;
+}
+
+ol.code code {
+	font: small "Courier New", Courier, monospace;
+}
+
+/* Creating indentations */
+
+ol.code .indent1 {
+	padding-left: 1em;
+}
+ol.code .indent2 {
+	padding-left: 2em;
+}
+ol.code .indent3 {
+	padding-left: 3em;
+}

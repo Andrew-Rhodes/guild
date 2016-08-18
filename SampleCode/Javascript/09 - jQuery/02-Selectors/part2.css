@@ -1,0 +1,11 @@
+.rectangle {
+    height:100px;
+    width:100px;
+    display: inline-block;
+	font-size: 20px;
+	border: black 1px solid;
+}
+
+.yellow {
+    background-color:#E2BE22;
+}

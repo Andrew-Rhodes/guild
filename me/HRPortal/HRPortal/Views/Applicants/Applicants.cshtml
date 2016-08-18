@@ -1,0 +1,89 @@
+﻿@using HRPortal.Models.Data
+@model HRPortal.Models.View_Model.CompanyApplicationViewModel
+@{
+    ViewBag.Title = "Applicants";
+}
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2>Application for @Html.DisplayFor(c => c.Company.CompanyName)</h2>
+        @Html.ActionLink("Return to the list of companies", "ListOfCompanies", "Applicants")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        @using (Html.BeginForm("ApplicationResult", "Applicants", new { companyId = Model.Company.CompanyId }, FormMethod.Post, new {id = "appForm"} ))
+        {
+            <div class="form-group">
+                <label>Company Name</label>
+                @Html.TextBoxFor(a => a.Company.CompanyName, new {@class = "form-control", placeholder = "CompanyName", @readonly = "readonly"})
+            </div>
+
+            <div class="form-group">
+                <label>Company ID</label>
+                @Html.TextBoxFor(a => a.Company.CompanyId, new {@class = "form-control", placeholder = "CompanyId", @readonly = "readonly"})
+            </div>
+
+
+            <div class="form-group">
+                <label>First Name</label>
+                @Html.TextBoxFor(a => a.Application.FirstName, new {@class = "form-control", placeholder = "First Name"})
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                @Html.TextBoxFor(a => a.Application.LastName, new {@class = "form-control", placeholder = "Last Name"})
+            </div>
+
+            <div class="form-group">
+                <label>Street Address</label>
+                @Html.TextBoxFor(a => a.Application.StreetAddress, new {@class = "form-control", placeholder = "Street Address"})
+            </div>
+
+            <div class="form-group">
+                <label>City</label>
+                @Html.TextBoxFor(a => a.Application.City, new {@class = "form-control", placeholder = "City"})
+            </div>
+
+            <div class="form-group">
+                <label>State</label>
+                @Html.TextBoxFor(a => a.Application.State, new {@class = "form-control", placeholder = "State"})
+            </div>
+
+            <div class="form-group">
+                <label>Position Applying For</label>
+                @Html.TextBoxFor(a => a.Application.Position, new {@class = "form-control", placeholder = "Position Applying For"})
+            </div>
+
+
+            <div class="form-group">
+                <label>Application Number</label>
+                @Html.TextBoxFor(a => a.Application.ApplicationNumber, new {@class = "form-control", placeholder = "CompanyId", @readonly = "readonly"})
+            </div>
+
+            <div class="form-group">
+                <label>Is all the information provided correct?</label>
+
+                @Html.DropDownListFor(a => a.Application.OkTerms, new[]
+                {
+                    new SelectListItem() {Text = "Yes", Value = bool.TrueString},
+                    new SelectListItem() {Text = "No", Value = bool.FalseString}
+                }, "Choose and option", new {@class = "form-control"})
+            </div>
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+        }
+    </div>
+</div>
+
+
+
+@section scripts
+{
+    <script src="~/scripts/jquery.validate.min.js"></script>
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/scripts/app/validate-defaults.js"></script>
+    <script src="~/scripts/app/applicationValidation.js"></script>
+}

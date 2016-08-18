@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events Part 1</title>
+        <link rel="stylesheet" type="text/css" href="../common.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<script type="text/javascript" src="../jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+		<h1>Lesson 03 - Events</h1>
+		<p>Now that you have figured out how to select the elements you want you can 
+		register events to be executed on them.  The rectangles below are configured 
+		to animate their growth on mouse over, return to default on mouse leave, and 
+		when clicked should go away.</p>
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+		<button id="abutton">Click to show/hide</button>
+		<p>Review the code that performs these features.</p>
+		<ol class="code">
+		<li><code>$(document).ready(function() {</code></li>
+		<li class="indent1"><code>$('div').mouseenter(function() {</code></li>
+        <li class="indent2"><code>$(this).animate({ height: '+=10px'});</code></li>
+		<li class="indent1"><code>});</code></li>
+		<li><code>&nbsp;</code></li>
+		<li class="indent1"><code>$('div').mouseleave(function() {</code></li>
+		<li class="indent2"><code>$(this).animate({ height: '-=10px'});</code></li>
+		<li class="indent1"><code>});</code></li>
+        <li><code>&nbsp;</code></li>
+		<li class="indent1"><code>$('div').click(function() {</code></li>
+		<li class="indent2"><code>$(this).toggle(1000);</code></li>
+		<li class="indent1"><code>});</code></li>
+		<li><code>});</code></li>
+		</ol>
+    </body>
+</html>

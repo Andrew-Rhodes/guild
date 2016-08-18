@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors</title>
+        <link rel="stylesheet" type="text/css" href="../common.css"/>
+		<script type="text/javascript" src="../jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+		<h1>Lesson 02 - Selectors</h1>
+		<p>Before you can manipulate a DOM element, you have to find it!  Thus jQuery has
+		built in support for selectors.  The selector syntax starts with the jQuery $ sign 
+		and in parenthesis builds an expression to indicate which items you want to select for
+		manipulation.</p>
+		<p>For example, here we have a hyperlink that will open the jQuery site into a new browser tab/window</p>
+		<p><a href="http://www.jquery.com" target="_blank">jQuery Site</a></p>
+		<p>In the referenced script, I have selected all hyperlinks and will pop a message when the 
+		user clicks it like so:</p>
+		<ol class="code">
+			<li><code>$(document).ready(function() {</code></li>
+			<li class="indent1"><code>$('a').click(function( event ) { <code></li>
+			<li class="indent2"><code>alert( "Thanks for visiting!" );<code></li>
+			<li class="indent1"><code>});<code></li>
+			<li><code>});</code></li>
+		</ol>
+		<p>Take special note that because the selector was a generic 'a' it selects all anchor tags, including the one below:</p>
+		<p><a href="http://www.stackoverflow.com" target="_blank">Stack Overflow Site</a></p>
+		<p>On to the next part!  <a href="part2.html">Part 2</a></p>
+    </body>
+</html>

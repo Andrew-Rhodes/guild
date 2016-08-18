@@ -1,0 +1,23 @@
+﻿@model HRPortal.Models.View_Model.CompanyApplicationViewModel
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        @if (Model.Application.OkTerms.Value)
+        {
+            <h1>Thank You, @Model.Application.FirstName @Model.Application.LastName</h1>
+            <p>You're application for @Model.Application.Position at @Model.Company.CompanyName has been submitted.</p>
+            @Html.ActionLink("Home Page", "Index", "Home")
+
+        }
+        else
+        {
+            <h1>Sorry, @Model.Application.FirstName @Model.Application.LastName</h1>
+            <p>You're information was not correct. You're application for @Model.Application.Position at @Model.Company.CompanyName <b>has not been</b> submitted.
+            </p>
+            @Html.ActionLink("Home Page", "Index", "Home")
+        }
+    </div>
+</div>

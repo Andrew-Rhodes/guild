@@ -1,0 +1,49 @@
+﻿@using RSVPResponses.Models
+@model RSVPResponses.MVC.Models.AttendeeVM
+@{
+    ViewBag.Title = "AddRSVP";
+}
+
+<h2>AddRSVP</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                <label>Name</label>
+                @Html.EditorFor(m => m.Guest.Name)
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                @Html.EditorFor(m => m.Guest.Email)
+            </div>
+            <div class="form-group">
+                <label>Attending</label>
+                @Html.EditorFor(m => m.Guest.Attending)
+            </div>
+            <div class="form-group" id="gameChoice">
+                <label>Name</label>
+                @*@Html.DropDownListFor(m => m.Guest.FavoriteGame, Model.Games, "Select a Game", null)*@
+                @Html.DropDownList("GameList", Model.Games, "Select a Game", new {id = "gameList"})
+                @Html.TextBoxFor(m => m.Guest.FavoriteGame)
+            </div>
+            <div id="daysofWeek">
+                @foreach (var day in Enum.GetValues(typeof(DaysOfTheWeek)))
+                {
+                    if (day.ToString() != "None")
+                    {
+                        <span>@Html.CheckBox(day.ToString(), new {value = (int)day, @class = "days"})
+                    @day.ToString()</span>
+                    }
+                }
+                @Html.HiddenFor(m=>m.Guest.Days)
+            </div>
+            <button>Submit</button>
+        }
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/scripts/app/addRSVP.js"></script>
+}

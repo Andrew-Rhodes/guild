@@ -1,0 +1,2 @@
+1. Create an array filled with numbers.  Create a variable called largest and initialize it to 0.  Write a loop to go through the array and find the largest number which should be placed into the largest variable.
+

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "LuckySevensJS";
+}
+
+<h2>LuckySevensJS</h2>
+
+<p>Starting Bet: <input type="text" id="amount" name="amount"/></p>
+<p><button id="playGame">Play</button></p>
+
+@* ADD RESULTS TABLE AND HAVE JAVASCRIPT SET VALUES *@
+
+<div id="resultsTable">
+    <table>
+        <tbody>
+        <tr>
+            <td>Starting Bet</td>
+            <td><input type="text" id="StartingBet" readonly/></td>
+        </tr>
+        <tr>
+            <td>Total Rolls Before Going Broke</td>
+            <td><input type="text" id="TotalRolls" readonly/></td>
+        </tr>
+        <tr>
+            <td>Highest Amount Won</td>
+            <td><input type="text" id="MaxWinnings" readonly/></td>
+        </tr>
+        <tr>
+            <td>Roll Count at Highest Amount Won</td>
+            <td><input type="text" id="MaxWinningsRoll" readonly/></td>
+        </tr>
+        </tbody>
+    </table>
+    <button id="playAgain">Play Again?</button>
+</div>
+
+@section scripts
+{
+    <script src="~/scripts/app/GameWorkflow.js"></script>    
+}

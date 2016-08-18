@@ -1,0 +1,20 @@
+﻿@using HRPortal.Models.Data
+@model List<HRPortal.Models.Data.Company>
+@{
+    ViewBag.Title = "AdminHome";
+}
+
+<h2>Select the company you work for</h2>
+
+@foreach (var c in Model)
+{
+    <h4>@Html.ActionLink(c.CompanyName, "CompanyHome", "Admin", new {id = c.CompanyId}, null)</h4>
+
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        @Html.ActionLink("Add Company", "AddCompany", "Admin", null, new { @class = "btn btn-primary"})
+    </div>
+</div>
+

@@ -1,0 +1,6 @@
+USE SWCCorp
+GO
+
+SELECT TOP(5) WITH TIES *
+FROM CurrentProducts
+ORDER BY RetailPrice DESC
